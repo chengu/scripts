@@ -1,0 +1,9 @@
+#!/bin/bash
+ls_date=`date +%Y-%m-%d`
+find /var/log/project/ -name "*${ls_date}*.log" | xargs grep $1
+
+
+# 快速搜索单个日志文件里指定内容
+# chmod +x find_all_log
+# ln -s find_all_log /usr/local/bin/find_all_log
+# use: find_all_log xxx

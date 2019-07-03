@@ -1,0 +1,9 @@
+#!/bin/bash
+clear
+ls_date=`date +%Y-%m-%d`
+grep $1 /var/log/project/record_${ls_date}*.log
+
+# 快速搜索单个日志文件里指定内容
+# chmod +x quick_find
+# ln -s quick_find /usr/local/bin/quick_find
+# use: quick_find xxx
